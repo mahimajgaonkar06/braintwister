@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#210D95"
+    tools:context=".dispfif">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="407dp"
+        android:layout_height="344dp"
+        android:layout_marginBottom="204dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fif" />
+
+
+    <Button
+        android:id="@+id/btagn"
+        android:layout_width="171dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="252dp"
+        android:backgroundTint="#6659AF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Play Again"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

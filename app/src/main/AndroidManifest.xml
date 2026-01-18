@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BrainTwister"
+        tools:targetApi="31">
+        <activity
+            android:name=".twinend"
+            android:exported="false" />
+        <activity
+            android:name=".twinten"
+            android:exported="false" />
+        <activity
+            android:name=".twinnine"
+            android:exported="false" />
+        <activity
+            android:name=".twineight"
+            android:exported="false" />
+        <activity
+            android:name=".twinseven"
+            android:exported="false" />
+        <activity
+            android:name=".twinsix"
+            android:exported="false" />
+        <activity
+            android:name=".twinfive"
+            android:exported="false" />
+        <activity
+            android:name=".twinfour"
+            android:exported="false" />
+        <activity
+            android:name=".twinthree"
+            android:exported="false" />
+        <activity
+            android:name=".twintwo"
+            android:exported="false" />
+        <activity
+            android:name=".twinone"
+            android:exported="false" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dispfif"
+            android:exported="false" />
+        <activity
+            android:name=".wordfif"
+            android:exported="false" />
+        <activity
+            android:name=".dispfor"
+            android:exported="false" />
+        <activity
+            android:name=".wordfor"
+            android:exported="false" />
+        <activity
+            android:name=".dispthir"
+            android:exported="false" />
+        <activity
+            android:name=".wordthir"
+            android:exported="false" />
+        <activity
+            android:name=".disptwe"
+            android:exported="false" />
+        <activity
+            android:name=".wordtwe"
+            android:exported="false" />
+        <activity
+            android:name=".dispele"
+            android:exported="false" />
+        <activity
+            android:name=".wordele"
+            android:exported="false" />
+        <activity
+            android:name=".dispten"
+            android:exported="false" />
+        <activity
+            android:name=".wordten"
+            android:exported="false" />
+        <activity
+            android:name=".dispnine"
+            android:exported="false" />
+        <activity
+            android:name=".wordnine"
+            android:exported="false" />
+        <activity
+            android:name=".dispeight"
+            android:exported="false" />
+        <activity
+            android:name=".wordeight"
+            android:exported="false" />
+        <activity
+            android:name=".dispseven"
+            android:exported="false" />
+        <activity
+            android:name=".wordseven"
+            android:exported="false" />
+        <activity
+            android:name=".dispsix"
+            android:exported="false" />
+        <activity
+            android:name=".wordsix"
+            android:exported="false" />
+        <activity
+            android:name=".dispfive"
+            android:exported="false" />
+        <activity
+            android:name=".wordfive"
+            android:exported="false" />
+        <activity
+            android:name=".dispfour"
+            android:exported="false" />
+        <activity
+            android:name=".wordfour"
+            android:exported="false" />
+        <activity
+            android:name=".dispthree"
+            android:exported="false" />
+        <activity
+            android:name=".wordthree"
+            android:exported="false" />
+        <activity
+            android:name=".disptwo"
+            android:exported="false" />
+        <activity
+            android:name=".wordtwo"
+            android:exported="false" />
+        <activity
+            android:name=".dispone"
+            android:exported="false" />
+        <activity
+            android:name=".wordone"
+            android:exported="false" />
+        <activity
+            android:name=".twinalert"
+            android:exported="false" />
+        <activity
+            android:name=".wizalert"
+            android:exported="false" />
+        <activity
+            android:name=".twinscr"
+            android:exported="false" />
+        <activity
+            android:name=".wizone"
+            android:exported="false" />
+        <activity
+            android:name=".OptScr"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

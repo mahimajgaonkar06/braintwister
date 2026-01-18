@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#577A44"
+    tools:context=".twineight">
+
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="85dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="572dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fishone" />
+
+    <ImageView
+        android:id="@+id/i2"
+        android:layout_width="92dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="312dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fishone" />
+
+    <ImageView
+        android:id="@+id/i3"
+        android:layout_width="92dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="360dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/octopus" />
+
+    <ImageView
+        android:id="@+id/i4"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="372dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/shark" />
+
+    <ImageView
+        android:id="@+id/i5"
+        android:layout_width="87dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="560dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/octopus" />
+
+    <ImageView
+        android:id="@+id/i6"
+        android:layout_width="91dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="224dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/penguin" />
+
+    <ImageView
+        android:id="@+id/i7"
+        android:layout_width="94dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="492dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/shark" />
+
+    <ImageView
+        android:id="@+id/i8"
+        android:layout_width="88dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/whale" />
+
+    <ImageView
+        android:id="@+id/i9"
+        android:layout_width="89dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="568dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/penguin" />
+
+    <ImageView
+        android:id="@+id/i10"
+        android:layout_width="91dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="444dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/frog" />
+
+    <ImageView
+        android:id="@+id/i11"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="516dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/whale" />
+
+    <ImageView
+        android:id="@+id/i12"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/starfish" />
+
+    <ImageView
+        android:id="@+id/i13"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="244dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/prawn" />
+
+    <ImageView
+        android:id="@+id/i14"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/frog" />
+
+    <ImageView
+        android:id="@+id/i15"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="252dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/starfish" />
+
+    <ImageView
+        android:id="@+id/i16"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="324dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/prawn" />
+
+    <ImageView
+        android:id="@+id/i17"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dolphin" />
+
+    <ImageView
+        android:id="@+id/i18"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="436dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nemo" />
+
+    <ImageView
+        android:id="@+id/i19"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="436dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/duck" />
+
+    <ImageView
+        android:id="@+id/i20"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dolphin" />
+
+    <ImageView
+        android:id="@+id/i21"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nemo" />
+
+    <ImageView
+        android:id="@+id/i22"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/round_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/duck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="AQUATICS"
+        android:textAlignment="center"
+        android:textColor="#960E11"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#960E11"
+        android:text="NEXT"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
