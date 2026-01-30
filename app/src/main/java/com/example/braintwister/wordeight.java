@@ -20,7 +20,7 @@ public class wordeight extends BaseActivity{
     Button b1,b2,b3,b4,b5;
     ImageButton n8,ht8;
     TextView e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,t15,t16;
-    ImageView img1;
+    ImageView img1,home8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class wordeight extends BaseActivity{
         b5=findViewById(R.id.btnN8);
         n8=findViewById(R.id.next8);
         ht8=findViewById(R.id.hint8);
+        home8=findViewById(R.id.home8);
 
 
 //        textboxes
@@ -104,7 +105,13 @@ public class wordeight extends BaseActivity{
                 sb1.append("N");
             }
         });
-
+        home8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordeight.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

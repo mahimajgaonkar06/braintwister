@@ -21,7 +21,7 @@ public class wordnine extends BaseActivity {
     Button b1,b2,b3,b4,b5;
     ImageButton n9,ht9;
     TextView e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,t17,t18;
-    ImageView img1;
+    ImageView img1,home9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class wordnine extends BaseActivity {
         b5=findViewById(R.id.btnA9);
         n9=findViewById(R.id.next9);
         ht9=findViewById(R.id.hint9);
+        home9=findViewById(R.id.home9);
 
 
 //        textboxes
@@ -105,7 +106,13 @@ public class wordnine extends BaseActivity {
                 sb1.append("A");
             }
         });
-
+        home9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordnine.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

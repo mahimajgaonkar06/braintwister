@@ -20,7 +20,7 @@ public class wordfour extends BaseActivity {
     Button b1,b2,b3,b4,b5;
     ImageButton n4,ht4;
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16;
-    ImageView img1;
+    ImageView img1,home4;
 
     TextView t7,t8;
     @Override
@@ -35,6 +35,7 @@ public class wordfour extends BaseActivity {
         b5=findViewById(R.id.btnS4);
         n4=findViewById(R.id.next4);
         ht4=findViewById(R.id.hint4);
+        home4=findViewById(R.id.home4);
 
 
 //        textboxes
@@ -103,7 +104,13 @@ public class wordfour extends BaseActivity {
                 sb1.append("S");
             }
         });
-
+        home4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordfour.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

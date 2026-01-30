@@ -19,7 +19,7 @@ public class wordsix extends BaseActivity {
     Button b1,b2,b3,b4,b5;
     ImageButton n6,ht6;
     TextView e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,t11,t12;
-    ImageView img1;
+    ImageView img1,home6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class wordsix extends BaseActivity {
         b5=findViewById(R.id.btnS6);
         n6=findViewById(R.id.next6);
         ht6=findViewById(R.id.hint6);
+        home6=findViewById(R.id.home6);
 
 
 //        textboxes
@@ -100,7 +101,13 @@ public class wordsix extends BaseActivity {
                 sb1.append("S");
             }
         });
-
+        home6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordsix.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

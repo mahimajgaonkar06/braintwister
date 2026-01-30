@@ -20,7 +20,7 @@ public class wordfive extends BaseActivity {
     Button b1,b2,b3,b4,b5;
     ImageButton n5,ht5;
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16;
-    ImageView img1;
+    ImageView img1,home5;
     TextView t9,t10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,7 @@ public class wordfive extends BaseActivity {
         b5=findViewById(R.id.btnE5);
         n5=findViewById(R.id.next5);
         ht5=findViewById(R.id.hint5);
+        home5=findViewById(R.id.home5);
 
 
 //        textboxes
@@ -99,7 +100,13 @@ public class wordfive extends BaseActivity {
                 sb1.append("E");
             }
         });
-
+        home5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordfive.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

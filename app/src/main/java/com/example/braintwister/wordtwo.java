@@ -22,7 +22,7 @@ public class wordtwo extends BaseActivity {
     Button b1,b2,b3,b4,b5;
     ImageButton n2,ht2;
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16;
-    ImageView img1;
+    ImageView img1,home2;
 
     TextView t3,t4;
 
@@ -38,6 +38,7 @@ public class wordtwo extends BaseActivity {
         b5=findViewById(R.id.btnN2);
         n2=findViewById(R.id.next2);
         ht2=findViewById(R.id.hint2);
+        home2=findViewById(R.id.home2);
 
 
 //        textboxes
@@ -105,7 +106,13 @@ public class wordtwo extends BaseActivity {
                 sb1.append("N");
             }
         });
-
+        home2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordtwo.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

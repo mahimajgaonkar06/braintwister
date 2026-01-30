@@ -7,6 +7,17 @@
     android:background="#1E1167"
     tools:context=".wordele">
 
+    <ImageView
+        android:id="@+id/home11"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="259dp"

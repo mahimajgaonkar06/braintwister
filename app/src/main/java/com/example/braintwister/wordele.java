@@ -23,7 +23,7 @@ public class wordele extends BaseActivity {
     Button b1,b2,b3,b4,b5,b6;
     ImageButton n11,h11;
     TextView e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,t21,t22;
-    ImageView img1;
+    ImageView img1,home11;
 
 
     @Override
@@ -41,6 +41,7 @@ public class wordele extends BaseActivity {
         b6=findViewById(R.id.btnS11);
         n11=findViewById(R.id.next11);
         h11=findViewById(R.id.hint11);
+        home11=findViewById(R.id.home11);
 
 
 //        textboxes
@@ -124,7 +125,13 @@ public class wordele extends BaseActivity {
                 sb1.append("S");
             }
         });
-
+        home11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordele.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

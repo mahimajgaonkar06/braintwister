@@ -22,7 +22,7 @@ public class wordten extends BaseActivity {
     Button b1,b2,b3,b4,b5;
     ImageButton n10,ht10;
     TextView e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,t19,t20;
-    ImageView img1;
+    ImageView img1,home10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,7 @@ public class wordten extends BaseActivity {
         b5=findViewById(R.id.btnG10);
         n10=findViewById(R.id.next10);
         ht10=findViewById(R.id.hint10);
+        home10=findViewById(R.id.home10);
 
 
 //        textboxes
@@ -105,7 +106,13 @@ public class wordten extends BaseActivity {
                 sb1.append("G");
             }
         });
-
+        home10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordten.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

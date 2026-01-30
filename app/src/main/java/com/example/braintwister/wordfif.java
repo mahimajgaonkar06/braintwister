@@ -22,7 +22,7 @@ public class wordfif extends BaseActivity {
     ImageButton n15,h15;
     TextView e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,e23,e24,
             e25,e26,e27,e28,e29,t29,t30;
-    ImageView img1;
+    ImageView img1,home15;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,7 @@ public class wordfif extends BaseActivity {
         b6=findViewById(R.id.btnR15);
         n15=findViewById(R.id.next15);
         h15=findViewById(R.id.hint15);
+        home15=findViewById(R.id.home15);
 
 
 //        textboxes
@@ -129,7 +130,13 @@ public class wordfif extends BaseActivity {
                 sb1.append("R");
             }
         });
-
+        home15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordfif.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

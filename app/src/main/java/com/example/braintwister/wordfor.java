@@ -19,7 +19,7 @@ public class wordfor extends BaseActivity {
     Button b1,b2,b3,b4,b5,b6;
     ImageButton n14,h14;
     TextView e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,t27,t28;
-    ImageView img1;
+    ImageView img1,home14;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class wordfor extends BaseActivity {
         b6=findViewById(R.id.btnR14);
         n14=findViewById(R.id.next14);
         h14=findViewById(R.id.hint14);
+        home14=findViewById(R.id.home14);
 
 
 //        textboxes
@@ -119,7 +120,13 @@ public class wordfor extends BaseActivity {
                 sb1.append("R");
             }
         });
-
+        home14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordfor.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

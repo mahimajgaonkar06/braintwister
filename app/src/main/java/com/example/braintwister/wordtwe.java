@@ -22,7 +22,7 @@ public class wordtwe extends BaseActivity {
     ImageButton n12,h12;
     TextView e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,t23,t24;
 //            e19,e20,e21,e22;
-    ImageView img1;
+    ImageView img1,home12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,7 @@ public class wordtwe extends BaseActivity {
         b6=findViewById(R.id.btnN12);
         n12=findViewById(R.id.next12);
         h12=findViewById(R.id.hint12);
+        home12=findViewById(R.id.home12);
 
 
 //        textboxes
@@ -123,7 +124,13 @@ public class wordtwe extends BaseActivity {
                 sb1.append("N");
             }
         });
-
+        home12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordtwe.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

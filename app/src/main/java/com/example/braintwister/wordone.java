@@ -1,6 +1,9 @@
 package com.example.braintwister;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.DialogInterface;
+import androidx.appcompat.app.AlertDialog;
+
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -26,7 +29,7 @@ public class wordone extends BaseActivity {
     Button b1,b2,b3,b4,b5;
     ImageButton n1,ht1;
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16;
-    ImageView img1;
+    ImageView img1,home1;
     ToggleButton tog1;
 
     TextView t1,t2;
@@ -43,6 +46,7 @@ public class wordone extends BaseActivity {
         b5=findViewById(R.id.btnL1);
         n1=findViewById(R.id.next1);
         ht1=findViewById(R.id.hint1);
+        home1=findViewById(R.id.home1);
 
         //        textboxes
 
@@ -111,6 +115,34 @@ public class wordone extends BaseActivity {
             }
         });
 
+        home1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(wordone.this);
+                builder.setTitle("Exit Game");
+                builder.setMessage("Your progress will be lost. Do you want to exit?");
+                builder.setCancelable(false);
+
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(wordone.this, OptScr.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+                builder.show();
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -272,6 +304,7 @@ public class wordone extends BaseActivity {
                 }
             }
         });
+
 
 
 

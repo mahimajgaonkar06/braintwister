@@ -18,7 +18,7 @@ public class wizone extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i3=new Intent(wizone.this,wizalert.class);
+                Intent i3=new Intent(wizone.this,wordone.class);
                 startActivity(i3);
             }
         });

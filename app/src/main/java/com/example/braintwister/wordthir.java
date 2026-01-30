@@ -21,7 +21,7 @@ public class wordthir extends BaseActivity {
     Button b1,b2,b3,b4,b5,b6;
     ImageButton n13,h13;
     TextView e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,e23,t25,t26;
-    ImageView img1;
+    ImageView img1,home13;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,7 @@ public class wordthir extends BaseActivity {
         b6=findViewById(R.id.btnT13);
         n13=findViewById(R.id.next13);
         h13=findViewById(R.id.hint13);
+        home13=findViewById(R.id.home13);
 
 
 //        textboxes
@@ -121,7 +122,13 @@ public class wordthir extends BaseActivity {
                 sb1.append("T");
             }
         });
-
+        home13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent h1 =new Intent(wordthir.this,OptScr.class);
+                startActivity(h1);
+            }
+        });
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
