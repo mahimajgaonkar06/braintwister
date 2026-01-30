@@ -1,6 +1,9 @@
 package com.example.braintwister;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -128,8 +131,28 @@ public class wordele extends BaseActivity {
         home11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent h1 =new Intent(wordele.this,OptScr.class);
-                startActivity(h1);
+                AlertDialog.Builder builder = new AlertDialog.Builder(wordele.this);
+                builder.setTitle("Exit Game");
+                builder.setMessage("Your progress will be lost. Do you want to exit?");
+                builder.setCancelable(false);
+
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(wordele.this, OptScr.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+                builder.show();
             }
         });
         img1.setOnClickListener(new View.OnClickListener() {

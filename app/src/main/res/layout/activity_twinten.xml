@@ -7,6 +7,16 @@
     android:background="#577A44"
     tools:context=".twinten">
 
+    <ImageView
+        android:id="@+id/hm10"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
 
     <ImageView
         android:id="@+id/i1"

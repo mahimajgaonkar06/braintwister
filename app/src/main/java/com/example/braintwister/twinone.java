@@ -1,9 +1,11 @@
 package com.example.braintwister;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
 import androidx.core.content.ContextCompat;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -16,7 +18,7 @@ public class twinone extends BaseActivity {
 
     Button b1;
 
-    ImageView i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14,i15,i16,i17,i18,i19,i20,i21,i22;
+    ImageView i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14,i15,i16,i17,i18,i19,i20,i21,i22,hm1;
     ImageView firstCard = null;
     int firstId = -1;
 
@@ -48,6 +50,7 @@ public class twinone extends BaseActivity {
         i20=findViewById(R.id.i20);
         i21=findViewById(R.id.i21);
         i22=findViewById(R.id.i22);
+        hm1=findViewById(R.id.hm1);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,7 +87,34 @@ public class twinone extends BaseActivity {
                 }
             }
         });
+        hm1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                AlertDialog.Builder builder = new AlertDialog.Builder(twinone.this);
+                builder.setTitle("Exit Game");
+                builder.setMessage("Your progress will be lost. Do you want to exit?");
+                builder.setCancelable(false);
+
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(twinone.this, OptScr.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+                builder.show();
+            }
+        });
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

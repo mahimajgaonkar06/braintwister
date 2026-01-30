@@ -1,5 +1,6 @@
 package com.example.braintwister;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -12,6 +13,8 @@ import android.graphics.Color;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
 
 
 public class wordsix extends BaseActivity {
@@ -104,8 +107,28 @@ public class wordsix extends BaseActivity {
         home6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent h1 =new Intent(wordsix.this,OptScr.class);
-                startActivity(h1);
+                AlertDialog.Builder builder = new AlertDialog.Builder(wordsix.this);
+                builder.setTitle("Exit Game");
+                builder.setMessage("Your progress will be lost. Do you want to exit?");
+                builder.setCancelable(false);
+
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(wordsix.this, OptScr.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+                builder.show();
             }
         });
         img1.setOnClickListener(new View.OnClickListener() {
